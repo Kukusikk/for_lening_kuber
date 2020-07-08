@@ -1,0 +1,19 @@
+version: '3'
+services:
+
+    frontend:
+        build: sa-frontend/
+        ports: 
+            - 80:80
+
+    logic:
+        build: sa-logic/
+        ports: 
+            - 5050:5000
+
+    web:
+        build: sa-webapp/
+        environment:
+            - SA_LOGIC_API_URL='http://logic:5000'
+        ports: 
+            - 8080:8080

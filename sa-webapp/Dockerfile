@@ -1,5 +1,5 @@
-# docker build -t sa-web-app .
-# docker run -d -p 8080:8080 -e SA_LOGIC_API_URL='http://<container_ip or docker machine ip>:5000' sa-web-app
+# docker build -t sa-web .
+# docker run -d -p 8080:8080 -e SA_LOGIC_API_URL='http://<container_ip or docker machine ip>:5000' sa-web
 
 
 
